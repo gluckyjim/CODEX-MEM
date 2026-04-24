@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-04-24T15:02:44+08:00",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "sizes": [
+    1000,
+    5000,
+    10000,
+    20000
+  ],
+  "query_count": 150,
+  "suites": [
+    {
+      "size": 1000,
+      "inserted": 1000,
+      "ingest_seconds": 4.381,
+      "ingest_per_second": 228.28,
+      "db_size_kb": 656.0,
+      "preflight_ms": 64.699,
+      "preflight_lines": 40,
+      "exact": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 52.077,
+        "p50_latency_ms": 51.502,
+        "p95_latency_ms": 55.011,
+        "max_latency_ms": 69.191
+      },
+      "bilingual": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 89.345,
+        "p50_latency_ms": 88.384,
+        "p95_latency_ms": 95.802,
+        "max_latency_ms": 113.225
+      },
+      "samples": {
+        "exact_top1_first3": [
+          {
+            "query": "MEM-00000 owner00000 AAA-AFH",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 55.785
+          },
+          {
+            "query": "MEM-00006 owner00006 AAG-AFN",
+            "expected_key": "MEM-00006",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 51.654
+          },
+          {
+            "query": "MEM-00013 owner00013 AAN-AFU",
+            "expected_key": "MEM-00013",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 51.364
+          }
+        ],
+        "bilingual_top1_first3": [
+          {
+            "query": "哪个规则提到 owner00000 的 AAA-AFH 在 spring 要 优先午班 并且主题是 fare_floor",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 87.845
+          },
+          {
+            "query": "哪个规则提到 owner00006 的 AAG-AFN 在 summer 要 优先午班 并且主题是 red_eye_bias",
+            "expected_key": "MEM-00006",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 89.648
+          },
+          {
+            "query": "哪个规则提到 owner00013 的 AAN-AFU 在 golden_week 要 控制夜航 并且主题是 yield_guard",
+            "expected_key": "MEM-00013",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 88.562
+          }
+        ]
+      }
+    },
+    {
+      "size": 5000,
+      "inserted": 5000,
+      "ingest_seconds": 21.793,
+      "ingest_per_second": 229.43,
+      "db_size_kb": 3160.0,
+      "preflight_ms": 325.463,
+      "preflight_lines": 40,
+      "exact": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 259.065,
+        "p50_latency_ms": 256.529,
+        "p95_latency_ms": 276.247,
+        "max_latency_ms": 285.125
+      },
+      "bilingual": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 516.439,
+        "p50_latency_ms": 520.381,
+        "p95_latency_ms": 556.352,
+        "max_latency_ms": 614.7
+      },
+      "samples": {
+        "exact_top1_first3": [
+          {
+            "query": "MEM-00000 owner00000 AAA-AFH",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 256.155
+          },
+          {
+            "query": "MEM-00033 owner00033 ABH-AGO",
+            "expected_key": "MEM-00033",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 262.076
+          },
+          {
+            "query": "MEM-00066 owner00066 ACO-AHV",
+            "expected_key": "MEM-00066",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 262.63
+          }
+        ],
+        "bilingual_top1_first3": [
+          {
+            "query": "哪个规则提到 owner00000 的 AAA-AFH 在 spring 要 优先午班 并且主题是 fare_floor",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 447.061
+          },
+          {
+            "query": "哪个规则提到 owner00033 的 ABH-AGO 在 golden_week 要 节中加价 并且主题是 late_booking",
+            "expected_key": "MEM-00033",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 435.166
+          },
+          {
+            "query": "哪个规则提到 owner00066 的 ACO-AHV 在 summer 要 优先午班 并且主题是 red_eye_bias",
+            "expected_key": "MEM-00066",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 444.012
+          }
+        ]
+      }
+    },
+    {
+      "size": 10000,
+      "inserted": 10000,
+      "ingest_seconds": 50.191,
+      "ingest_per_second": 199.24,
+      "db_size_kb": 6284.0,
+      "preflight_ms": 589.234,
+      "preflight_lines": 40,
+      "exact": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 607.28,
+        "p50_latency_ms": 598.538,
+        "p95_latency_ms": 683.75,
+        "max_latency_ms": 779.421
+      },
+      "bilingual": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 948.397,
+        "p50_latency_ms": 901.561,
+        "p95_latency_ms": 1078.634,
+        "max_latency_ms": 1199.062
+      },
+      "samples": {
+        "exact_top1_first3": [
+          {
+            "query": "MEM-00000 owner00000 AAA-AFH",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 719.908
+          },
+          {
+            "query": "MEM-00066 owner00066 ACO-AHV",
+            "expected_key": "MEM-00066",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 779.421
+          },
+          {
+            "query": "MEM-00133 owner00133 AFD-AKK",
+            "expected_key": "MEM-00133",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 611.092
+          }
+        ],
+        "bilingual_top1_first3": [
+          {
+            "query": "哪个规则提到 owner00000 的 AAA-AFH 在 spring 要 优先午班 并且主题是 fare_floor",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1025.794
+          },
+          {
+            "query": "哪个规则提到 owner00066 的 ACO-AHV 在 summer 要 优先午班 并且主题是 red_eye_bias",
+            "expected_key": "MEM-00066",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 999.876
+          },
+          {
+            "query": "哪个规则提到 owner00133 的 AFD-AKK 在 golden_week 要 控制夜航 并且主题是 yield_guard",
+            "expected_key": "MEM-00133",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1040.988
+          }
+        ]
+      }
+    },
+    {
+      "size": 20000,
+      "inserted": 20000,
+      "ingest_seconds": 113.097,
+      "ingest_per_second": 176.84,
+      "db_size_kb": 12540.0,
+      "preflight_ms": 1281.19,
+      "preflight_lines": 40,
+      "exact": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 1039.233,
+        "p50_latency_ms": 1030.222,
+        "p95_latency_ms": 1093.513,
+        "max_latency_ms": 1336.743
+      },
+      "bilingual": {
+        "queries": 150,
+        "top1_hits": 150,
+        "top5_hits": 150,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0,
+        "mean_latency_ms": 1838.601,
+        "p50_latency_ms": 1820.113,
+        "p95_latency_ms": 1954.526,
+        "max_latency_ms": 2165.508
+      },
+      "samples": {
+        "exact_top1_first3": [
+          {
+            "query": "MEM-00000 owner00000 AAA-AFH",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1060.413
+          },
+          {
+            "query": "MEM-00133 owner00133 AFD-AKK",
+            "expected_key": "MEM-00133",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1066.16
+          },
+          {
+            "query": "MEM-00266 owner00266 AKG-APN",
+            "expected_key": "MEM-00266",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1085.346
+          }
+        ],
+        "bilingual_top1_first3": [
+          {
+            "query": "哪个规则提到 owner00000 的 AAA-AFH 在 spring 要 优先午班 并且主题是 fare_floor",
+            "expected_key": "MEM-00000",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1824.168
+          },
+          {
+            "query": "哪个规则提到 owner00133 的 AFD-AKK 在 golden_week 要 控制夜航 并且主题是 yield_guard",
+            "expected_key": "MEM-00133",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1771.64
+          },
+          {
+            "query": "哪个规则提到 owner00266 的 AKG-APN 在 summer 要 保商务流 并且主题是 weekend_smoothing",
+            "expected_key": "MEM-00266",
+            "top1_hit": true,
+            "top5_hit": true,
+            "latency_ms": 1752.411
+          }
+        ]
+      }
+    }
+  ]
+}

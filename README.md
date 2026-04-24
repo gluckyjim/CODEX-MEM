@@ -161,6 +161,20 @@ codex-mem capture --project "my-project" --summary "..."
 python -m unittest discover -s tests -p "test_*.py"
 ```
 
+For a larger synthetic retrieval benchmark:
+
+```bash
+python scripts/run_extreme_self_test.py \
+  --sizes 1000 5000 10000 \
+  --query-count 120 \
+  --output-json docs/benchmarks/extreme-self-test.json \
+  --output-md docs/benchmarks/extreme-self-test.md
+```
+
+Latest published benchmark:
+
+- [docs/benchmarks/extreme-self-test-2026-04-24.md](docs/benchmarks/extreme-self-test-2026-04-24.md)
+
 ## Codex Integration
 
 This repo includes:
