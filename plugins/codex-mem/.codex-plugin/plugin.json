@@ -1,0 +1,40 @@
+{
+  "name": "codex-mem",
+  "version": "0.1.0",
+  "description": "Local-first persistent memory workflow for Codex sessions.",
+  "author": {
+    "name": "Ling + Codex"
+  },
+  "homepage": "https://github.com/gluckyjim/CODEX-MEM",
+  "repository": "https://github.com/gluckyjim/CODEX-MEM",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "memory",
+    "sqlite",
+    "workflow",
+    "preflight"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Mem",
+    "shortDescription": "Persistent memory workflow for Codex",
+    "longDescription": "Use codex-mem to retain stable rules, generate preflight context, capture session summaries, and keep rolling project state for Codex work.",
+    "developerName": "Ling + Codex",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/gluckyjim/CODEX-MEM",
+    "privacyPolicyURL": "https://github.com/gluckyjim/CODEX-MEM",
+    "termsOfServiceURL": "https://github.com/gluckyjim/CODEX-MEM",
+    "defaultPrompt": [
+      "Use codex-mem before substantial work and capture key decisions after work."
+    ],
+    "composerIcon": "./assets/codex-mem.svg",
+    "logo": "./assets/codex-mem.svg",
+    "screenshots": [],
+    "brandColor": "#1F6FEB"
+  }
+}

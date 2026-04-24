@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-mem"
+version = "0.1.0"
+description = "Local-first persistent memory workflow for Codex sessions."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  {name = "Ling + Codex"}
+]
+keywords = ["codex", "memory", "sqlite", "workflow", "search"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/gluckyjim/CODEX-MEM"
+Repository = "https://github.com/gluckyjim/CODEX-MEM"
+Issues = "https://github.com/gluckyjim/CODEX-MEM/issues"
+
+[project.scripts]
+codex-mem = "codex_mem.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["codex_mem*"]

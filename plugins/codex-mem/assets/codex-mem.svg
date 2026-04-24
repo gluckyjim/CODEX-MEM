@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Codex Mem">
+  <rect width="128" height="128" rx="24" fill="#1F6FEB"/>
+  <path d="M31 36h44c11 0 20 9 20 20v36H51c-11 0-20-9-20-20V36z" fill="#fff" opacity=".96"/>
+  <path d="M45 50h34M45 64h34M45 78h22" stroke="#1F6FEB" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="95" cy="92" r="14" fill="#0C3D91"/>
+  <path d="M95 84v16M87 92h16" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+</svg>

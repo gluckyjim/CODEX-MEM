@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+state/
+build/
+dist/
+*.egg-info/
+tmp_cred_input.txt
+tmp_gcm_diag/
