@@ -16,31 +16,31 @@ description: Use the local codex-mem CLI before substantial work, when the user 
 
 1. Before substantial work, render a preflight brief:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\Ling\Documents\codex-mem\scripts\codex-mem.ps1 preflight --query "<topic>"
+```bash
+codex-mem preflight --query "<topic>"
 ```
 
 If the task clearly belongs to one project, include:
 
-```powershell
+```bash
 --project "<project>"
 ```
 
 2. When the user says `记住这条`, save the stable rule:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\Ling\Documents\codex-mem\scripts\codex-mem.ps1 remember --text "<stable rule>"
+```bash
+codex-mem remember --text "<stable rule>"
 ```
 
 3. After substantial work, capture the session:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\Ling\Documents\codex-mem\scripts\codex-mem.ps1 capture `
-  --project "<project>" `
-  --summary "<what changed>" `
-  --decision "<key decision>" `
-  --next-step "<next step>" `
-  --changed-file "C:\path\to\file.py"
+```bash
+codex-mem capture \
+  --project "<project>" \
+  --summary "<what changed>" \
+  --decision "<key decision>" \
+  --next-step "<next step>" \
+  --changed-file "/abs/path/to/file.py"
 ```
 
 ## Notes
@@ -48,4 +48,6 @@ powershell -ExecutionPolicy Bypass -File C:\Users\Ling\Documents\codex-mem\scrip
 - Prefer concise, durable statements over raw transcript dumps.
 - Use `--rule` for facts that should become stable memory immediately.
 - Use `project-state show` when you need the latest project snapshot without a broader search.
-- The durable store lives under `C:\Users\Ling\Documents\codex-mem\state\`.
+- If `codex-mem` is not on PATH, fall back to `python -m codex_mem ...` from the repo or the platform wrapper in `scripts/`.
+- On Windows PowerShell, if npm's `codex-mem.ps1` shim is blocked by execution policy, use `codex-mem.cmd ...`.
+- npm installs default to a user-local home (`%USERPROFILE%\\Documents\\codex-mem\\state` on Windows, `~/.codex-mem/state` on POSIX).

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.1
+
+- fixed the Windows PowerShell wrapper so `--home` is inserted after the selected subcommand
+- fixed the POSIX wrapper to follow the same command ordering contract
+- added an npm package wrapper with a Node-based `codex-mem` launcher
+- switched plugin and AGENTS examples away from author-machine-specific absolute paths
+- documented npm-based installation and user-local default store behavior
+
 ## 0.1.0
 
 - initial `codex-mem` MVP

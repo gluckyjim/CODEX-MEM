@@ -17,4 +17,10 @@ else
 fi
 
 cd "$REPO_ROOT"
-exec "$PYTHON_BIN" -m codex_mem --home "$STATE_HOME" "$@"
+if [ "$#" -gt 0 ]; then
+  COMMAND="$1"
+  shift
+  exec "$PYTHON_BIN" -m codex_mem "$COMMAND" --home "$STATE_HOME" "$@"
+fi
+
+exec "$PYTHON_BIN" -m codex_mem --help

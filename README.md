@@ -78,6 +78,21 @@ codex-mem init
 codex-mem preflight --query "memory workflow"
 ```
 
+### npm Package Wrapper
+
+```bash
+npm install -g github:gluckyjim/CODEX-MEM
+codex-mem doctor
+codex-mem preflight --query "memory workflow"
+```
+
+The npm wrapper executes the bundled Python module and defaults to a user-local store:
+
+- Windows: `%USERPROFILE%\\Documents\\codex-mem\\state`
+- POSIX: `~/.codex-mem/state`
+
+On Windows PowerShell, npm may generate a `codex-mem.ps1` shim that is blocked by local execution policy. In that case, use `codex-mem.cmd ...` or the repo wrapper in `scripts/`.
+
 ### Windows Wrapper
 
 ```powershell

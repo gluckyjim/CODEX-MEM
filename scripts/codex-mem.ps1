@@ -43,11 +43,23 @@ function Resolve-PythonCommand {
 Push-Location $repoRoot
 try {
     $python = @(Resolve-PythonCommand)
-    if ($python.Length -gt 1) {
-        & $python[0] $python[1..($python.Length - 1)] -m codex_mem --home $stateHome @CliArgs
+    $fullArgs = @("-m", "codex_mem")
+    if ($CliArgs.Count -gt 0) {
+        $fullArgs += $CliArgs[0]
+        $fullArgs += "--home"
+        $fullArgs += $stateHome
+        if ($CliArgs.Count -gt 1) {
+            $fullArgs += $CliArgs[1..($CliArgs.Count - 1)]
+        }
     }
     else {
-        & $python[0] -m codex_mem --home $stateHome @CliArgs
+        $fullArgs += "--help"
+    }
+    if ($python.Length -gt 1) {
+        & $python[0] $python[1..($python.Length - 1)] @fullArgs
+    }
+    else {
+        & $python[0] @fullArgs
     }
 }
 finally {

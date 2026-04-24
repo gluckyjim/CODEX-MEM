@@ -1,0 +1,42 @@
+{
+  "name": "codex-mem",
+  "version": "0.1.1",
+  "description": "Local-first persistent memory workflow for Codex sessions.",
+  "license": "MIT",
+  "homepage": "https://github.com/gluckyjim/CODEX-MEM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gluckyjim/CODEX-MEM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gluckyjim/CODEX-MEM/issues"
+  },
+  "keywords": [
+    "codex",
+    "memory",
+    "sqlite",
+    "workflow",
+    "preflight"
+  ],
+  "bin": {
+    "codex-mem": "./bin/codex-mem.js"
+  },
+  "files": [
+    "bin/",
+    "codex_mem/*.py",
+    "plugins/codex-mem/",
+    "scripts/codex-mem.ps1",
+    "scripts/codex-mem.sh",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test:python": "python -m unittest discover -s tests -p \"test_*.py\"",
+    "smoke:node": "node ./bin/codex-mem.js doctor"
+  }
+}
